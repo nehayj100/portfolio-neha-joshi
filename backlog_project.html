@@ -1,0 +1,112 @@
+<!DOCTYPE HTML>
+<!--
+	
+-->
+<html>
+	<head>
+		<title>About Me - Neha Joshi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.image_custom img {
+			max-width: 300px; /* Adjust the value as needed */
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+		.image_custom_projects img {
+			max-width: 500px; /* Adjust the value as needed */
+			height: 300px;
+			display: block;
+			margin: 0 auto;
+		}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Neha Joshi</h1>
+						<p>Texas A&M University</p>
+						<ul class="actions special">
+							<li><a href="index.html" class="button">Home</a></li>
+						</ul>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+			
+						<!-- Content -->
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+								<!-- Introduction Section -->
+								<h2>COVID-19 Pandemic-Driven Product Backlog Assessment - A Time Series Forecasting Approach </h2>
+									Merck US <br>
+									Note: Exact sales figures could not be reported as confidential to Merck US
+									<br/>
+									<strong>Tools and methods: </strong> Time Series Forecasting, Linear Regression, Hierarchial Clustering, SQL
+									<br/><br/>
+								<span class="image_custom_projects"><img src="images/backlog_2.jpg" alt="" /></span>
+
+
+								<strong>About the Project: </strong>
+								<br>
+								<ul>
+									<li>Numerous elective surgeries were postponed due to the onset of the COVID-19 pandemic.</li>
+									<li>Consequently, sales of the considered project, an anesthesia reversal agent, declined.</li>
+									<li>A significant backlog emerged in the sales of the product.</li>
+									<li>The objective at hand was to assess the backlog generated in the sale of the product from mid-2020 to mid-2022.</li>
+									<li>Additionally, we identified the top 20 target hospitals in the country to address this backlog.</li>
+								</ul>
+
+
+								<strong>Backlog Calculation: </strong>
+
+								<ul>
+									<li>Firstly, time series forecasting was performed to forecast the sales of the product HAD COVID NOT HAPPENED.</li>
+									<li>Multiple time series forecasting models were used- including ARIMA, SARIMAX, Holt Winter's exponential smoothing, fbProphet.</li>
+									<li>fbProphet performed the best and hence the forecast was considered as final.</li>
+									<li>Now the difference between the forecasted and actual sales was considered as Backlog.</li>
+									<li>Following figures make the methodology clearer.</li>
+								</ul>
+
+								<span class="image_custom_projects"><img src="images/backlog_img1.png" alt="" /></span>
+								<br><br>
+								<span class="image_custom_projects"><img src="images/backlog_img2.png" alt="" /></span>
+								<br></br>
+
+								<strong>Target Hospitals Identification: </strong>
+
+								<ul>
+									<li>Hospitals were clustered into 3 major clusters - Low, Medium and High Sales.</li>
+									<li>100+ hospital specific features were available in the data - including # beds, # rooms, # surgeons, # anesthesiologists, # nurses, revenue etc.</li>
+									<li>A regression model was built in each of the 3 clusters after performing feature selection for each cluster (from the above features).</li>
+									<li>As per the selected features, the model had a estimate of the expected sales for each hospital.</li>
+									<li>The hospitals were ranked in the descending order of difference in expected and actual sales.</li>
+									<li>Finally, top 20 hospitals (across all 3 clusters) were identified as targets- since huge sales opportunity was observed</li>
+								</ul>
+
+								<span class="image_custom_projects"><img src="images/backlog_img3.png" alt="" /></span>
+					</div>
+
+				
+ 
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>

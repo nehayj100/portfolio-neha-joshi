@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<!--
+	
+-->
+<html>
+	<head>
+		<title>About Me - Neha Joshi</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+
+		<style>
+			.image_custom img {
+			max-width: 300px; /* Adjust the value as needed */
+			height: auto;
+			display: block;
+			margin: 0 auto;
+		}
+		.image_custom_projects img {
+			max-width: 500px; /* Adjust the value as needed */
+			height: 300px;
+			display: block;
+			margin: 0 auto;
+		}
+		</style>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1>Neha Joshi</h1>
+						<p>Texas A&M University</p>
+						<ul class="actions special">
+							<li><a href="index.html" class="button">Home</a></li>
+						</ul>
+					</header>
+
+				<!-- Main -->
+					<div id="main">
+			
+						<!-- Content -->
+							<section id="content" class="main">
+								<!-- <span class="image main"><img src="images/pic04.jpg" alt="" /></span> -->
+								<!-- Introduction Section -->
+								<h2>Machine Learning based Feature Attribution to identify new potential customers</h2>
+									Merck US
+									<br/>
+									<strong>Tools and methods: </strong> SQL, Machine Learning
+									<br/><br/>
+								<span class="image_custom_projects"><img src="images/feature_attr_1.jpg" alt="" /></span>
+
+
+								<strong>About the Project: </strong>
+								<br>
+								<ul>
+									<li>Pool of more than 10M customers was created from the last 8 years from an SQL database.</li>
+									<li>100+ Characteristics of the customers were identified like: demographics, other products purchase, social history, medical history etc.</li>
+									<li>Multiple models trained to understand the important features in customers that drive purchase of the product.</li>
+									<li>From the best models- further analysis was done to identify top features for target pool identification.</li>
+									<li>This resulted in better understanding of target customers and increased the pool by over 25%.</li>	
+									</ul>
+
+
+								<strong>Feature Attribution Techniques used: </strong>
+								<br>
+								<ul>
+									<li><strong>Filter/Statistical Methods: </strong>Employed 3 statistical methods for feature attribution: Chi2 testing, Information gain and MAD.</li>
+									<li><strong>Embedded Methods: </strong>Used Random Forest, XGB to utilize the embedded feature importance setting.</li>
+									<li><strong>Wrapper Methods: </strong>Primarily focused on Permutation Feature Importance which is model agnostic and proved to be excellent for our use-case.</li>
+									<li><strong>SHAP: </strong>Use Shapley values and corresponding plots to understand the feature importance - proved to be the best method in terms of interpretability.</li>
+								</ul>
+					</div>
+
+				
+ 
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrollex.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/browser.min.js"></script>
+			<script src="assets/js/breakpoints.min.js"></script>
+			<script src="assets/js/util.js"></script>
+			<script src="assets/js/main.js"></script>
+
+	</body>
+</html>
