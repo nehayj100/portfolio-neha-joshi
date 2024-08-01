@@ -39,7 +39,7 @@
 							<li><a href="https://www.linkedin.com/in/neha-joshi-tamu/" class="icon brands fa-linkedin alt"><span class="label">LinkedIn</span></a></li>
 							<li><a href="https://github.com/nehayj100" class="icon brands fa-github alt"><span class="label">GitHub</span></a></li>
 							<li><a href="https://www.youtube.com/@NehaJoshi_TAMU" class="icon brands fa-youtube alt"><span class="label">YouTube</span></a></li>
-							<!-- <li><a href="https://scholar.google.com/citations?user=yourprofile" class="icon brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li> -->
+							<!-- <li><a href="https://scholar.google.com/citations?user=dwJ_Y7YAAAAJ&hl=en&authuser=1" class="icon brands fa-google-scholar alt"><span class="label">Google Scholar</span></a></li> -->
 						</ul>
 						<br />
 					</header>
@@ -73,7 +73,7 @@
 										<p>
 											Hello! I'm Neha Joshi, a tech enthusiast from Texas, USA, with a strong academic and professional background in Machine Learning and Artificial Intelligence. I have done my undergrad from one of the top Indian Institutions (NIT Nagpur) with a convocation gold medal and academic excellence prize.
 
-											I kick started my career as a Machine Learning Engineer at a leading Indian consulting firm, collaborating on impactful projects with Merck US. Transitioning to academia, I am currently pursuing a Master's in Computer Engineering at the esteemed Texas A&M University, focusing on Machine Learning and AI.
+											I kick-started my career as a Machine Learning Engineer at a leading Indian consulting firm, collaborating on impactful projects with Merck US. Transitioning to academia, I am currently pursuing a Master's in Computer Engineering at the esteemed Texas A&M University, focusing on Machine Learning and AI.
 
 											Alongside my studies, I serve as a Teaching Assistant for a Data Science course, facilitating lab sessions for senior engineering students. Currently, I'm immersed in Multimodal Deep Learning Research at the STMI lab, working on calorie prediction using meal images for diabetes patients, with a focus on self-supervised learning techniques.
 										</p>
@@ -103,9 +103,9 @@
 									<br/>
 
 									<ul>
-										<li>Researching and implementing self-supervised learning techniques for calorie detection from food images.
-										<li>Working on an overall project that attempts to create a multi-modal model based on meal images, CGM readings and other demographics for glucose monitoring and future peak predictions.
-										<li>Rigorously implementing algorithms like DINO, BYOL and modifying them to adapt to the current project.
+										<li>Building a Multi-modal Deep Learning Model to forecast PPGR in diabetes patients based on modalities like CGM time series readings, calories consumed through reported meal images, viome test results, demographics (like age, bmi, weight, etc), Fitbit MET readings and cholesterol test results.
+										<li>The project involves real time data from 45 patients across 6 months which is used to fine tune train the built model.
+										<li>Handing the entire vertical of supervised pretraining and in-image food area-based micronutrient estimation from images.
 									</ul>
 								</div>
 
@@ -126,7 +126,7 @@
 
 
 								<div style="text-align: left;">
-									<h2>Senior Data Scientist</h2>
+									<h2>Machine Learning Engineer</h2>
 									Aspect Ratio, India
 									<br/>
 									July 2020 - July 2023
@@ -161,8 +161,7 @@
 									<br/>
 									<strong>Prominent Coursework: </strong>
 								</br>
-									Machine Learning, Artificial Intelligence, Data Mining, Parallel Computing, 
-									Statistical Computing, Operating Systems, Mathematics for Signal Processing, Computer Networks
+									Machine Learning, Artificial Intelligence, Data Mining, Large Language Models, Deep Learning, Software Engineering, Intelligent User Interfaces, Mathematics for Signal Processing, Operating Systems
 									<br/>
 									<br/>
 									<strong>Prominent Achievements: </strong>
@@ -222,16 +221,16 @@
 								
 
 								<div style="text-align: left;">
-									<h2>Self-supervised Learning for calorie prediction using food meal images</h2>
+									<h2>Meal Calorie Prediction using Real Time food images of 45 subjects</h2>
 									STMI Lab, TAMU
 									<br/>
 									<strong>Tools and methods: </strong> Multi-modal Deep Learning, Vision Transformers, BYOL, DINO, Attention Transformers, LSTMs
 									<br/><br/>
 
 									<ul>
-										<li>Using self-supervised learning to predict the number of calories in food based on meal images.</li>
-										<li>Using DINO architecture to perform self-supervised learning.</li>
-										<li>Further using CGM readings, patient demographics as other modalities for solving an overall bigger problem - blood glucose level prediction .</li>
+										<li>Working extensively on Transformer and CNN based pre-training and fine tuning for calorie estimation tasks from meal images. Designing entire architecture and implementing the same to enhance the metrics like Focal loss, RMSRE etc.</li>
+										<li>Implemented DINO, BYOL and SimCLR architecture based self-supervised learning models for Nutrient prediction task.</li>
+										<li>Designed an ensemble-based architecture and optimized surgical fine-tuning on real world collected meal dataset and compared results for various experiments while pre-training the models on Recipe1M, ImageNet etc.</li>
 										
 									</ul>
 								</div>
@@ -243,6 +242,32 @@
 								<ul class="actions">
 									<li><a href="stmi_project.html" class="button">Learn More</a></li>
 								</ul>
+
+
+
+
+								<div style="text-align: left;">
+									<h2>RAG based Chatbot for a prominent NGO based in India</h2>
+									Freelance
+									<br/>
+									<strong>Tools and methods: </strong> RAGs, LLMs, Python, Natural Language Processing
+									<br/><br/>
+
+									<ul>
+										<li>Engineering an AI-powered chatbot leveraging Retrieval Augmented Generation to streamline user engagement and provide instant, personalized responses to tailored FAQs for an NGO based in India. </li>
+										<li>Performing RAG using diverse proprietary data sources from the NGO like blogs(text), Podcasts(Audio), event videos. </li>
+										<!-- <li>The Chatbot will be able to answer questions asked by users real time </li> -->
+										
+									</ul>
+								</div>
+
+								<span class="image_custom_projects"><img src="images/nlp_2.jpg" alt="" /></span>
+
+								<br>
+								<br>
+								<!-- <ul class="actions">
+									<li><a href="chatbot.html" class="button">Learn More</a></li>
+								</ul> -->
 
 
 								<div style="text-align: left;">
@@ -284,6 +309,7 @@
 										<li>Trained a multi-modal deep learning network comprising a 4-layer Convolutional Neural Network (CNN) for image processing and a 1-layer Recurrent Neural Network (RNN) for audio analysis.</li>
 										<li>Employed latent fusion technique to seamlessly integrate information from both modalities.</li>
 										<li>Outperformed standalone models, showcasing the efficacy of multi-modal learning approach in digit classification tasks</li>
+										<li>Deployed the model to production using AWS ECS, Docker to perform real time OCR+Audio classification.</li>
 										
 									</ul>
 									<a href="https://github.com/nehayj100/Multi-modal-Deep-Learning-" class="button">Github Link</a>
@@ -480,12 +506,12 @@
 											<strong>Databases:</strong><br>
 											SQL, MongoDB
 											<br><br>
-											<!-- <strong>Machine Learning/AI:</strong><br>
-											Deep Learning, Natural Language Processing, Retrieval Augmented Generators, Large Language Models, LangChain, Hugging Face Transformers
-											<br><br> -->
-											<!-- <strong>Big Data:</strong><br>
-											Hadoop, Spark, Kafka etc
-											<br><br> -->
+											<strong>Machine Learning/AI:</strong><br>
+											Deep Learning, Natural Language Processing, Retrieval Augmented Generators, Prompt Engineering,  Large Language Models, LangChain, Hugging Face Transformers
+											<br><br>
+											<strong>Tools:</strong><br>
+											Hadoop, Spark, Kafka, Git, CI/CT/CD
+											<br><br>
 											<strong>Data Science:</strong><br>
 											Statistics, Machine Learning, Optimization, Predictive Analytics, Time Series Forecasting, Signal Processing, Data Mining, ETL, Dashboarding, Image Processing
 											<br><br>
@@ -557,12 +583,18 @@
 									<div style="text-align: left;">
 										<h2>Represented VNIT in the 26th  National Conference on Communications</h2>
 										
-										Presented my work on Machine Learning Techniques for Human Activity Classification in the 26th NCC at IIT Kharagpur.
+										
+										<!-- <br> -->
+										<ul>
+											<li>Presented my work on Machine Learning Techniques for Human Activity Classification in the 26th NCC at IIT Kharagpur.</li>
+											<li> Published a paper on <a href = "https://ieeexplore.ieee.org/document/9056019/metrics#metrics">'A Compact, Circularly Polarized Antenna for Human Activity Classification'</a> in NCC 2020.</li>		
+										</ul>
 										<br><br>
 												<!-- IMAGES -->
 												<span class="image_custom"><img src="images/NCC.jpg" alt="IIT Kharagpur, India" /></span>
-
 												<br><br>
+												
+												
 <!-- 
 										</ul> -->
 

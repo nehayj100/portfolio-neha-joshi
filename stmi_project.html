@@ -4,7 +4,7 @@
 -->
 <html>
 	<head>
-		<title>About Me - Neha Joshi</title>
+		<title>Neha Joshi - STMI</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -49,7 +49,7 @@
 								<h2>Self-supervised Learning for calorie prediction using food meal images</h2>
 									STMI Lab, TAMU
 									<br/>
-									<strong>Tools and methods: </strong> Multi-modal Deep Learning, Vision Transformers, BYOL, DINO, Attention Transformers, LSTMs
+									<strong>Tools and methods: </strong> Multi-modal Deep Learning, Vision Transformers, BYOL, DINO, Attention Transformers, LSTMs, CNNs (VGG, ResNET, Inception), Ensemble Modelling
 									<br/><br/>
 								<span class="image_custom_projects"><img src="images/stmi_1.jpg" alt="" /></span>
 
@@ -57,15 +57,19 @@
 								<strong>About the Project: </strong>
 								<br>
 								<ul>
-										<li>Using self-supervised learning to predict the number of calories in food based on meal images.</li>
-										<li>Using DINO architecture to perform self-supervised learning.</li>
-										<li>Further using CGM readings, patient demographics as other modalities for solving an overall bigger problem - blood glucose level prediction .</li>
-										
+										<li>The main goal of the project is to perform accurate calorie prediction from food images. The subjects considered for the project are obligated to send us images of their meals throughout the day.</li>
+										<li>The food considered is not a single ingredient but complex recipies like Burritos, Rice Meat Bowls etc </li>
+										<li>Owing to the scarcity of data, the calorie detection modelis built in two steps: pre-trainig and fine-tuning.</li>
+										<li>Firstly, Self-Supervised pre-training (which has gained a lot of attention in reserch since the past 5 years) was done. We implemented DINO, BYOL, SumCLR where pre-traning was done on a massive 1M recipe dataset and fine -tuning was done on the real world dataset that we collected.</li>
+										<li>The results were promising (upto 80% accurate predictions) but there was a scope of improvement.</li>
+										<li>Further, Supervised Pretraining was tried with mdoels like VGG19, ResNet50, Inception v3 etc. Here individual model pre-training results were  not satisfactory.</li>
+										<li>We went one step ahead and designed an architecture of an Ensemble model which performed very well.</li>
+										<li>Surgical fine tuning of this model is in progress and state of the art results are expected for calorie estimation using mere food images.</li>
 									</ul>
 					</div>
 
 				
- -->
+ 
 			</div>
 
 		<!-- Scripts -->
